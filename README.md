@@ -147,8 +147,7 @@ Receipt Processor
     - Payload: Receipt JSON
     - Response: JSON containing an id for the receipt.
     **INPUT JSON**
-    ``` 
-    json
+    ``` json
     {
         "id": "1"
         "retailer": "Target",
