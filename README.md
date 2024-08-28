@@ -94,11 +94,10 @@ Receipt Processor
     - Method: `Get`
     - Response: A JSON object containing the number of points awarded.
 
-    **Examples**
-    ``` 
-    Make a GET HTTP request to endpoint `/receipt/{id}/points`
-    *** More inputs are found under project folder src/models/receipt.js ***
-    Sample INPUT JSON:
+    **INPUT JSON:**
+    ``` json
+    //Make a GET HTTP request to endpoint `/receipt/{id}/points`
+    
     {
         "id": "1"
         "retailer": "Target",
@@ -125,10 +124,10 @@ Receipt Processor
         "total": "35.35"
     }
     ```
-    ``` 
-    Sample Out Put
+     ***Sample Output***
+    ``` json
     { "points": 32 }
-
+    /**
     Breakdown:
         6 points - retailer name has 6 characters
         10 points - 4 items (2 pairs @ 5 points each)
@@ -138,7 +137,7 @@ Receipt Processor
                     item price of 12.00 * 0.2 = 2.4, rounded up is 3 points
         6 points - purchase day is odd
     + ---------
-    = 28 points
+    = 28 points */
     ```
 
 3. POST Receipt Information
@@ -146,6 +145,7 @@ Receipt Processor
     - Method: POST
     - Payload: Receipt JSON
     - Response: JSON containing an id for the receipt.
+
     **INPUT JSON**
     ``` json
     {
@@ -175,7 +175,6 @@ Receipt Processor
     }
     ```
     ***OUTPUT JSON***
-    ```
-    json
+    ```json
     { "id": "1" }
     ```
