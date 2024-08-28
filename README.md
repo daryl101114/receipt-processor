@@ -3,9 +3,7 @@ Receipt Processor
 
 ## Table of Contents
 - [Installation](#installation)
-- [Endpoints](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Endpoints](#Endpoints)
 
 ## Installation
 1. Make sure Docker is installed
