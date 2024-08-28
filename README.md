@@ -14,16 +14,25 @@ Receipt Processor
 
 2. Clone Repository 
     ```bash
-    git clone https://github.com/yourusername/yourproject.git
+    git clone https://github.com/daryl101114/receipt-processor.git
     ```
 3. Open terminal and go to repository
-    ``` cd <repo PATH>```
+    ``` bash
+    cd <repo_PATH>
+    ```
 
 4. Build Docker Image
-    ``` docker build . -t <Docker-Name>```
+    ```bash 
+    docker build . -t <Docker-Name>
+    ```
 
 5. Run Docker Image
-    ``` docker run -d -p 3000:3000 <docker-image-id> ```
+    ``` bash
+     docker run -d -p 3000:3000 <docker-image-id> 
+    ```
+> [!NOTE]
+> Once Docker Container is running, App should be running under `localhot:3000`
+
 
 ## Endpoints
 ## 1. GET All Receipts
