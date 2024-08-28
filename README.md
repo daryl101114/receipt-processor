@@ -31,7 +31,7 @@ Receipt Processor
      docker run -d -p 3000:3000 <docker-image-id> 
     ```
 > [!NOTE]
-> Once Docker Container is running, App should be running under `localhot:3000`
+> Once Docker Container is running, App should be running under `https://localhost:3000/` or `http://localhost:3000/`
 
 
 ## Endpoints
