@@ -4,9 +4,9 @@ Receipt Processor
 ## Table of Contents
 - [Installation](#installation)
 - [Endpoints](#Endpoints)
-    -[GET All Receipts](#1-get-all-receipts)
-    -[GET Receipt Points](#2-get-receipt-points)
-    -[POST Receipt Information](#3-post-receipt-information)
+    - [GET All Receipts](#1-get-all-receipts)
+    - [GET Receipt Points](#2-get-receipt-points)
+    - [POST Receipt Information](#3-post-receipt-information)
 
 ## Installation
 1. Make sure Docker is installed
