@@ -32,6 +32,7 @@ Receipt Processor
     ```
 > [!NOTE]
 > Once Docker Container is running, App should be running under `https://localhost:3000/` or `http://localhost:3000/`
+> Use postman to test endpoints
 
 
 ## Endpoints
