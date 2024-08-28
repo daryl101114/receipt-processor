@@ -32,7 +32,6 @@ Receipt Processor
 
 6. Run Docker Image from Image ID
     ``` bash
-    docker run --env SERVER_PORT=8000 <image>
     docker run --env SERVER_PORT=8000 -d -p 8000:8000 <docker-image-id> 
     ```
 > [!NOTE]
