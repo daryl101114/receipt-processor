@@ -1,7 +1,7 @@
 const {getInstance} = require( './db/dbContext.js');
 const express = require('express');
 const receiptRouter = require('./routes/receiptRoutes.js');
-const {getReceiptById, addReceipt, getReceipts}= require('./models/receipts.js');
+const {getReceipts}= require('./models/receipts.js');
 
 
 const app = express()
@@ -19,8 +19,14 @@ app.use(express.urlencoded({
 // Routes
 app.use(receiptRouter);
 app.get('/', async (req, res) => {
-    const receipts = await getMembers();
-  res.send({receipts})
+  try{
+    const receipts = await getReceipts();
+    res.send({receipts})
+  }
+  catch(err){
+    res.status(500).send()
+  }
+    
 })
 
 

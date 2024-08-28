@@ -5,7 +5,6 @@ const generateRetailNamePoints = (retailName) => {
 
     for(let i=0; i<lowerCaseString.length; i++){
         let charCode = lowerCaseString.charCodeAt(i);
-
         if(
             (charCode > 47 && charCode < 58) ||// numeric (0-9)
             // (charCode > 64 && charCode < 91) ||// upper alpha (A-Z)

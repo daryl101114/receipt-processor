@@ -74,7 +74,6 @@ const wallgreens = {
 
 function addReceipt(receipt){
     const {retailer,purchaseDate, purchaseTime, total, items} = receipt
-    console.log(items)
     const sql = `INSERT INTO receipts (retailer, purchaseDate, purchaseTime, total, items) VALUES(?,?,?,?,?)`
     return new Promise((resolve, reject)=> {
         db.run(sql, [retailer,purchaseDate,purchaseTime,total,items], function(err) {

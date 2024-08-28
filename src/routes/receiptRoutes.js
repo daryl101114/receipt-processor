@@ -7,7 +7,6 @@ const addReceipt = async (req, res) =>{
     try{
         const receipt = req.body;
         const result = await processReceipt(receipt);
-        console.log(result)
         return res.json({id: result});
     }catch(err){
         console.log(err)
@@ -17,7 +16,6 @@ const addReceipt = async (req, res) =>{
 
 const getReceiptById = async (req, res) =>{
     try{
-        console.log("hit")
         const {id} = req.params;
         const result = await generatePoint(id);
         return res.json({points: result});
