@@ -93,10 +93,8 @@ Receipt Processor
     - Method: `Get`
     - Response: A JSON object containing the number of points awarded.
 
-    ***Sample Input JSON***
+    ***Sample Input JSON*** - Make a GET HTTP request to endpoint `/receipt/{id}/points
     ``` json
-    //Make a GET HTTP request to endpoint `/receipt/{id}/points`
-    
     {
         "id": "1"
         "retailer": "Target",
