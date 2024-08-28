@@ -90,7 +90,7 @@ Receipt Processor
     ```
 
 2. GET Receipt Points
-    -- Path: `/receipt/{id}/points`
+    - Path: `/receipt/{id}/points`
     - Method: `Get`
     - Response: A JSON object containing the number of points awarded.
 
@@ -142,10 +142,10 @@ Receipt Processor
     ```
 
 3. POST Receipt Information
-    -Path: /receipts/process
-    -Method: POST
-    -Payload: Receipt JSON
-    -Response: JSON containing an id for the receipt.
+    - Path: /receipts/process
+    - Method: POST
+    - Payload: Receipt JSON
+    - Response: JSON containing an id for the receipt.
 
     ``` 
     INPUT JSON
