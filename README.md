@@ -32,11 +32,11 @@ Receipt Processor
 - **Payload**: N/A
 - **Response**: JSON array of receipt items.
 
-        **Description**
-        This API is to retrieve all receipts within the Database
+**Description**
+This API is to retrieve all receipts within the Database
 
-        **Examples**
-        ``` json
+**Examples**
+``` json
         [
                 {
                 "retailer": "Target",
@@ -87,15 +87,16 @@ Receipt Processor
                 "total": "35.35"
                 }
         ]
-        ```
+```
 
 ## 2. GET Receipt Points
-    - Path: `/receipt/{id}/points`
-    - Method: `Get`
-    - Response: A JSON object containing the number of points awarded.
+- **Path**: `/receipt/{id}/points`
+- **Method**: `GET`
+- **Payload**: N/A
+- **Response**: A JSON object containing the number of points awarded.
 
-    ***Sample Input JSON*** - Make a GET HTTP request to endpoint `/receipt/{id}/points
-    ``` json
+***Sample Input JSON*** - Make a GET HTTP request to endpoint `/receipt/{id}/points
+ ``` json
     {
         "id": "1"
         "retailer": "Target",
@@ -121,12 +122,12 @@ Receipt Processor
         ],
         "total": "35.35"
     }
-    ```
-     ***Sample Output***
-    ``` json
+```
+ ***Sample Output***
+``` json
     { "points": 32 }
-    ```
-    ```
+ ```
+```
     Breakdown:
         6 points - retailer name has 6 characters
         10 points - 4 items (2 pairs @ 5 points each)
@@ -137,16 +138,16 @@ Receipt Processor
         6 points - purchase day is odd
     + ---------
     = 28 points
-    ```
+ ```
 
 ## 3. POST Receipt Information
-    - Path: /receipts/process
-    - Method: POST
-    - Payload: Receipt JSON
-    - Response: JSON containing an id for the receipt.
+- **Path**: `/receipts/process`
+- **Method**: `POST`
+- **Payload**: Receipt JSON
+- **Response**: JSON containing an id for the receipt.
 
-    **INPUT JSON**
-    ``` json
+**INPUT JSON**
+``` json
     {
         "id": "1"
         "retailer": "Target",
@@ -172,8 +173,8 @@ Receipt Processor
         ],
         "total": "35.35"
     }
-    ```
-    ***OUTPUT JSON***
-    ```json
+```
+***OUTPUT JSON***
+```json
     { "id": "1" }
-    ```
+```
