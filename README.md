@@ -35,8 +35,7 @@ Receipt Processor
     This API is to retrieve all receipts within the Database
 
     **Examples**
-    ``` 
-    JSON
+    ``` json
     [
             {
             "retailer": "Target",
@@ -94,7 +93,7 @@ Receipt Processor
     - Method: `Get`
     - Response: A JSON object containing the number of points awarded.
 
-    **INPUT JSON:**
+    ***Sample Input JSON***
     ``` json
     //Make a GET HTTP request to endpoint `/receipt/{id}/points`
     
