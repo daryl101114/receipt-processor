@@ -127,7 +127,7 @@ Receipt Processor
      ***Sample Output***
     ``` json
     { "points": 32 }
-    /**
+    
     Breakdown:
         6 points - retailer name has 6 characters
         10 points - 4 items (2 pairs @ 5 points each)
@@ -137,7 +137,7 @@ Receipt Processor
                     item price of 12.00 * 0.2 = 2.4, rounded up is 3 points
         6 points - purchase day is odd
     + ---------
-    = 28 points */
+    = 28 points
     ```
 
 3. POST Receipt Information
