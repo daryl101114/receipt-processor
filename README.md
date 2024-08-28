@@ -27,67 +27,67 @@ Receipt Processor
 
 ## Endpoints
 ## 1. GET All Receipts
-    - Path: `/`
-    - Method: `GET`
-    - Payload Method: N/A
-    - Response: JSON containing an array of receipt items.
+- **Path**: `/`
+- **Method**: `GET`
+- **Payload**: N/A
+- **Response**: JSON array of receipt items.
 
-    **Description**
-    This API is to retrieve all receipts within the Database
+        **Description**
+        This API is to retrieve all receipts within the Database
 
-    **Examples**
-    ``` json
-    [
-            {
-            "retailer": "Target",
-            "purchaseDate": "2022-01-01",
-            "purchaseTime": "13:01",
-            "items": [
+        **Examples**
+        ``` json
+        [
                 {
-                "shortDescription": "Mountain Dew 12PK",
-                "price": "6.49"
-                },{
-                "shortDescription": "Emils Cheese Pizza",
-                "price": "12.25"
-                },{
-                "shortDescription": "Knorr Creamy Chicken",
-                "price": "1.26"
-                },{
-                "shortDescription": "Doritos Nacho Cheese",
-                "price": "3.35"
-                },{
-                "shortDescription": "   Klarbrunn 12-PK 12 FL OZ  ",
-                "price": "12.00"
-                }
-            ],
-            "total": "35.35"
-            },
-            {
-            "retailer": "Target",
-            "purchaseDate": "2022-01-01",
-            "purchaseTime": "13:01",
-            "items": [
+                "retailer": "Target",
+                "purchaseDate": "2022-01-01",
+                "purchaseTime": "13:01",
+                "items": [
+                    {
+                    "shortDescription": "Mountain Dew 12PK",
+                    "price": "6.49"
+                    },{
+                    "shortDescription": "Emils Cheese Pizza",
+                    "price": "12.25"
+                    },{
+                    "shortDescription": "Knorr Creamy Chicken",
+                    "price": "1.26"
+                    },{
+                    "shortDescription": "Doritos Nacho Cheese",
+                    "price": "3.35"
+                    },{
+                    "shortDescription": "   Klarbrunn 12-PK 12 FL OZ  ",
+                    "price": "12.00"
+                    }
+                ],
+                "total": "35.35"
+                },
                 {
-                "shortDescription": "Mountain Dew 12PK",
-                "price": "6.49"
-                },{
-                "shortDescription": "Emils Cheese Pizza",
-                "price": "12.25"
-                },{
-                "shortDescription": "Knorr Creamy Chicken",
-                "price": "1.26"
-                },{
-                "shortDescription": "Doritos Nacho Cheese",
-                "price": "3.35"
-                },{
-                "shortDescription": "   Klarbrunn 12-PK 12 FL OZ  ",
-                "price": "12.00"
+                "retailer": "Target",
+                "purchaseDate": "2022-01-01",
+                "purchaseTime": "13:01",
+                "items": [
+                    {
+                    "shortDescription": "Mountain Dew 12PK",
+                    "price": "6.49"
+                    },{
+                    "shortDescription": "Emils Cheese Pizza",
+                    "price": "12.25"
+                    },{
+                    "shortDescription": "Knorr Creamy Chicken",
+                    "price": "1.26"
+                    },{
+                    "shortDescription": "Doritos Nacho Cheese",
+                    "price": "3.35"
+                    },{
+                    "shortDescription": "   Klarbrunn 12-PK 12 FL OZ  ",
+                    "price": "12.00"
+                    }
+                ],
+                "total": "35.35"
                 }
-            ],
-            "total": "35.35"
-            }
-    ]
-    ```
+        ]
+        ```
 
 ## 2. GET Receipt Points
     - Path: `/receipt/{id}/points`
