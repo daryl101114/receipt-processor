@@ -4,6 +4,9 @@ Receipt Processor
 ## Table of Contents
 - [Installation](#installation)
 - [Endpoints](#Endpoints)
+    -[GET All Receipts](#1-get-all-receipts)
+    -[GET Receipt Points](#2-get-receipt-points)
+    -[POST Receipt Information](#3-post-receipt-information)
 
 ## Installation
 1. Make sure Docker is installed
@@ -23,7 +26,7 @@ Receipt Processor
     ``` docker run -d -p 3000:3000 <docker-image-id> ```
 
 ## Endpoints
-1. GET All Receipts
+## 1. GET All Receipts
     - Path: `/`
     - Method: `GET`
     - Payload Method: N/A
@@ -86,7 +89,7 @@ Receipt Processor
     ]
     ```
 
-2. GET Receipt Points
+## 2. GET Receipt Points
     - Path: `/receipt/{id}/points`
     - Method: `Get`
     - Response: A JSON object containing the number of points awarded.
@@ -136,7 +139,7 @@ Receipt Processor
     = 28 points
     ```
 
-3. POST Receipt Information
+## 3. POST Receipt Information
     - Path: /receipts/process
     - Method: POST
     - Payload: Receipt JSON
