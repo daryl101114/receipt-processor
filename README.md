@@ -127,7 +127,8 @@ Receipt Processor
      ***Sample Output***
     ``` json
     { "points": 32 }
-    
+    ```
+    ```
     Breakdown:
         6 points - retailer name has 6 characters
         10 points - 4 items (2 pairs @ 5 points each)
