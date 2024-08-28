@@ -146,9 +146,9 @@ Receipt Processor
     - Method: POST
     - Payload: Receipt JSON
     - Response: JSON containing an id for the receipt.
-
+    **INPUT JSON**
     ``` 
-    INPUT JSON
+    json
     {
         "id": "1"
         "retailer": "Target",
@@ -175,8 +175,8 @@ Receipt Processor
         "total": "35.35"
     }
     ```
-
+    ***OUTPUT JSON***
     ```
-    OUTPUT JSON
+    json
     { "id": "1" }
     ```
