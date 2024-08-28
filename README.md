@@ -23,15 +23,20 @@ Receipt Processor
 
 4. Build Docker Image
     ```bash 
-    docker build . -t <Docker-Name>
+    docker build --tag receipt-processor:latest .
+    ```
+5. List Docker Images
+    ``` bash
+    docker images
     ```
 
-5. Run Docker Image
+6. Run Docker Image from Image ID
     ``` bash
-     docker run -d -p 3000:3000 <docker-image-id> 
+    docker run --env SERVER_PORT=8000 <image>
+    docker run --env SERVER_PORT=8000 -d -p 8000:8000 <docker-image-id> 
     ```
 > [!NOTE]
-> Once Docker Container is running, App should be running under `https://localhost:3000/` or `http://localhost:3000/`
+> Once Docker Container is running, App should be running under `http://localhost:3000/`
 > Use postman to test endpoints
 
 

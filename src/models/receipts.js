@@ -104,4 +104,30 @@ function getReceiptById(receiptId) {
         });
  }
 
-    module.exports = {MM, testMM, target, target2, wallgreens, getReceiptById, addReceipt}
+ function getReceipts() {
+  return new Promise((resolve, reject) => {
+      const members = [];
+      db.each('SELECT * FROM receipts', (err, row) => {
+          if(err)
+              reject(err);
+          else {
+              members.push({
+                  id: row.id,
+                  retailer:row.retailer,
+                  purchaseDate: row.purchaseDate,
+                  purchaseTime: row.purchaseTime,
+                  total:row.total,
+                  items:row.items
+              });
+          }
+      }, (err, n) => {
+          if(err)
+              reject(err);
+          else {
+              resolve(members);
+          }
+      });
+  });
+}
+
+    module.exports = {MM, testMM, target, target2, wallgreens, getReceiptById, addReceipt, getReceipts}
